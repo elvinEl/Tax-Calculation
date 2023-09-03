@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="iller()">
+    <form action="">
+      <label for="">Neqliyyat tipini secin</label>
+      <select name="" id="neqliyyatTipi">
+        <option value="masin">Masin</option>
+        <option value="avtobus">Avtobus</option>
+      </select>
+      <label for="">Neqliyyatin mator gucunu secin</label><br />
+      <span>
+        <input type="radio" name="matorGucu" id="secim1" value="0a.g-999a.g" />
+        <label for="">0a.g-999 a.g</label><br />
+        <input
+          type="radio"
+          name="matorGucu"
+          id="secim2"
+          value="1000a.g-1500a.g"
+        />
+        <label for="">1000a.g-1500a</label><br />
+        <input
+          type="radio"
+          name="matorGucu"
+          id="secim3"
+          value="1501a.g-2000a.g"
+        />
+        <label for="">1500a.g-2000a.g</label><br />
+      </span>
+
+      <label for="">Neqliyyat ilini secin</label>
+      <select name="" id="neqliyyatIli">
+        <option value="default">Ili secin</option>
+      </select>
+      <input type="button" value="Hesabla" onclick="vergiHesabla()" />
+    </form>
+    <h5 id="netice"></h5>
+    <script src="main.js"></script>
+  </body>
+</html>
